@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/clogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/clogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Labour"
+        tools:ignore="ExtraText"
+        tools:targetApi="31">
+
+        <!-- Order activities alphabetically -->
+        <activity android:name=".Registrationform" android:exported="false" />
+        <activity android:name=".Dashboard" android:exported="false" />
+        <activity android:name=".EditProfile" android:exported="false" />
+        <activity android:name=".Forgottpage" android:exported="false" />
+        <activity android:name=".Kycprocess" android:exported="false" />
+        <activity android:name=".Loginpage" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".OtpVerification" android:exported="false" />
+        <activity android:name=".Select_service" android:exported="false" />
+        <activity android:name=".Sub_category" android:exported="false" />
+        <activity android:name=".Webview" android:exported="false" />
+        <activity android:name=".Wallet" android:exported="false" />
+        <activity android:name=".Workordercard" android:exported="false" />
+
+        <activity android:name=".Splash" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

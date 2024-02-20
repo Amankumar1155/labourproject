@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/user"
+    android:layout_height="match_parent"
+    tools:context=".WordDataAccept">
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lyl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/voilet">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <ImageView
+                    android:id="@+id/back_booking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/black_icon"
+                    android:backgroundTint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Order Details"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vertical"
+            android:orientation="vertical"
+            android:layout_below="@+id/lyl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ordernum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="Work ID:-634564596"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/autoCancelText"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:text="21/09/202410:00 AM"
+                    android:layout_toEndOf="@+id/orderNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/horizLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
+                android:layout_below="@+id/linearLayout"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/workerImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/person"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aman chaursiya"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textContact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:text="7398869340"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Laboyr/ Carpenter / painter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:text="Booking Details"
+            android:layout_below="@+id/view"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:id="@+id/details"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/detailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-31dp"
+            android:layout_marginEnd="0dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_location_on_24"
+                android:text="Service Location"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="10dp"
+                android:text="802 Om Tower, Commercial Belt , Alpha-1, Gr. Noida"
+                android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:hint="Cancell"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="InvalidId" />
+
+                <Button
+                    android:id="@+id/accept"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:hint="Accept"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,58 @@
+package com.aman.labour.Adapter;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+
+import com.aman.labour.DebitFragmnt;
+import com.aman.labour.RechargeFragmnt;
+public class MyViewPagerAdapter extends FragmentPagerAdapter
+{
+    public MyViewPagerAdapter(FragmentManager fm)
+    {
+        super(fm);
+    }
+
+    @Nullable
+    @Override
+    public CharSequence getPageTitle(int position)
+    {
+        String title=null;
+
+        if (position==0)
+        {
+            title="Recharge Data";
+        }
+        else if (position==1)
+        {
+            title="Deduction Balance";
+        }
+        return title;
+    }
+    @NonNull
+    @Override
+    public Fragment getItem(int position)
+    {
+        Fragment fragment=null;
+
+        if (position==0)
+        {
+            fragment=new RechargeFragmnt();
+        }
+        else if (position==1)
+        {
+            fragment=new DebitFragmnt();
+        }
+
+        return fragment;
+    }
+
+    @Override
+    public int getCount()
+    {
+        return 2;
+    }
+
+}

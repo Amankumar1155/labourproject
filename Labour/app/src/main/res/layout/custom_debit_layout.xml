@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/debitCardView"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <TextView
+           android:id="@+id/transactionText"
+           android:textAlignment="center"
+           android:textSize="16sp"
+           android:text=""
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+
+       <TextView
+           android:id="@+id/Timetextview"
+           android:text="12/09/2024 10:43 PM"
+           android:textAlignment="center"
+           android:textSize="16sp"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/ammountTextView"
+            android:textColor="#F10505"
+            android:text="₹50.00 rupees "
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:textColor="#112ECF"
+            android:text="Status: "
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
